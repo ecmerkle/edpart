@@ -1,0 +1,9 @@
+Package: edpart
+Title: Ed's recursive partitioning package to reproduce some rpart results
+Version: 0.5
+Date: 2009-10-29
+Author: Edgar C. Merkle
+Maintainer: Edgar C. Merkle <ecmerkle@gmail.com>
+Description: This package is not fully functional. It was developed to ensure that I understood recursive partitioning procedures, and it was used for parts of Merkle & Shaffer, 2011, British Journal of Mathematical & Statistical Psychology.
+License: GPL (>= 3)
+
