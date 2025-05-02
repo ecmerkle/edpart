@@ -5,11 +5,16 @@ Ed's recursive partitioning and regression trees package to reproduce some resul
 library("edpart")
 data(Boston, package = "MASS")
 
-## tree predicting medv based on the first 13 columns
+## tree predicting medv based on the first 13 variables
 efit <- edpart(Boston$medv, Boston[,1:13])
 
 ## returns cptable akin to rpart's cptable
 efit
+
+## comparison to rpart
+library("rpart")
+rfit <- rpart(medv ~ ., data = Boston)
+rfit$cptable
 ```
 
 If you are interested in citing this package, I prefer that you cite the paper below instead (the package was used to write the paper):
